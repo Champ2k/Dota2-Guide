@@ -44,7 +44,6 @@ function App() {
   return (
     <BrowserRouter>
     <div id="app" className="App">
-      
     <Navigation />
       <Route path="/" exact component={Image}/>
       <Route path="/rate" >

@@ -6,6 +6,7 @@ import { Row, Col } from 'react-bootstrap'
 import '../style/infomation.css'
 
 const Infomation = (props) => {
+    const { name } = useParams()
     const [heroAttributeData, setHeroAttributeData] = useState([])
     const [heroWinPickRateData, setHeroWinPickRateData] = useState([])
     const [keyOfJsonWinPickRateData, setKeyOfJsonWinPickRateData] = useState([])
@@ -21,7 +22,6 @@ const Infomation = (props) => {
     const [level, setLevel] = useState(1);
     const [heroGainStatValue, setHeroGainStatValue] = useState([]);
     const [keyOfStatus, setKeyOfStatus] = useState([]);
-    const { name } = useParams()
     const [pickRate, setPickRate] = useState([])
     const [winRate, setWinRate] = useState([])
     const [keyWordPickRate, setKeyWordPickRate] = useState([])

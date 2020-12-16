@@ -53,40 +53,46 @@ const Image = () => {
             <Row>
                 <Col>
             <div>
-                <h1 style={{"color": "white"}}>Agility</h1>
-                {heroAgiImg.map((data, index) => (
-                    <Link to={`/infomation/${data.displayName}`}  key={index} id={data.displayName}>
-                    <img alt={data.displayName} id={`HeroId${data.heroId}`} src={data.img}></img>
-                    </Link>
-                        )
-                    )
-                }
-            </div>
-                </Col>
-                <Col>
-            <div>
-                <h1 style={{"color": "white"}} >Intelligence</h1>
-                {heroIntImg.map((data, index) => (
-                    <Link to={`/infomation/${data.displayName}`}  key={index} id={data.displayName}>
-                    <img alt={data.displayName} id={`HeroId${data.heroId}`} src={data.img}></img>
-                    </Link>
-                        )
-                    )
-                }
-            </div>
-                </Col>
-                <Col>
-            <div>
                 <h1 style={{"color": "white"}}>Strength</h1>
                 {heroStrImg.map((data, index) => (
                     <Link to={`/infomation/${data.displayName}`}  key={index} id={data.displayName}>
-                    <img alt={data.displayName} id={`HeroId${data.heroId}`} src={data.img}></img>
+                        <div className="photo-wrapper">
+                            <img className="photo" alt={data.displayName} id={`HeroId${data.heroId}`} src={data.img}></img>
+                        </div>
                     </Link>
                         )
                         )
                     }
             </div>
                 </Col>
+                <Col>
+            <div>
+                <h1 style={{"color": "white"}}>Agility</h1>
+                {heroAgiImg.map((data, index) => (
+                    <Link to={`/infomation/${data.displayName}`}  key={index} id={data.displayName}>
+                        <div className="photo-wrapper">
+                            <img className="photo" alt={data.displayName} id={`HeroId${data.heroId}`} src={data.img}></img>
+                        </div>
+                    </Link>
+                        )
+                    )
+                }
+            </div>
+                </Col>
+            <Col>
+            <div>
+                <h1 style={{"color": "white"}} >Intelligence</h1>
+                {heroIntImg.map((data, index) => (
+                    <Link to={`/infomation/${data.displayName}`}  key={index} id={data.displayName}>
+                        <div className="photo-wrapper">
+                            <img className="photo" alt={data.displayName} id={`HeroId${data.heroId}`} src={data.img}></img>
+                        </div>
+                    </Link>
+                        )
+                    )
+                }
+            </div>
+            </Col>
             </Row>
 
         </div>
