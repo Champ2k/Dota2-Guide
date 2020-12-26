@@ -7,24 +7,6 @@
 ## **Prerequisites**
 - [Node.js](https://nodejs.org/en/)  (ver. 12 or newer) 
 - [MongoDB](https://www.mongodb.com/1)
-- [Docker](https://www.docker.com/)
-    
-
-
-## **Setup Docker Images**
-### Docker Frontend
-1. Go to directory *frontend/dota2_guide_react/*
-2. Run the following command
-```
-docker build -t <your name>/react-frontend
-```
-
-### Docker Backend
-1. Go to directory *api/dota2/*
-2. Run the following command
-```
-docker build -t <your name>/node-backend
-```
 
 ## **Running On Local**
 ### **Frontend**
